@@ -1,0 +1,25 @@
+.dc-wrapper{
+    background: #ffffff;
+    width: 300px;
+    padding: 24px 24px;
+    margin: 3px;
+    box-shadow: 3px 12px 18px rgba(222, 222, 222, 0.395);
+    border-radius: 12px;
+    border: 1px solid rgba(203, 203, 203, 0.622);
+    /* width: ; */
+    /* font-family:Tahoma, sans-serif; */
+    /* margin-left: 12px; */
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+.dc-wrapper p{
+    margin: 3px;
+}
+.dc-qty{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.dc-title{
+    font-weight: 600;
+    color: rgb(119, 119, 119);
+}

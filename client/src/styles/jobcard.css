@@ -1,0 +1,165 @@
+/* GRID WRAPPER (main layout for jobcards) */
+.jh-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 22px;
+}
+
+/* JOB CARD CONTAINER */
+.jh-card {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 26px rgba(15, 23, 42, 0.06);
+  transition: transform 0.14s ease, box-shadow 0.14s ease;
+  /* width: 125%; */
+}
+
+.jh-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+}
+
+/* LEFT — logo + metadata */
+.jh-card-left {
+  display: flex;
+  gap: 14px;
+}
+
+.jh-logo {
+  width: 48px;
+  height: 48px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.jh-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.jh-role {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.jh-company {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.muted {
+  color: #6b7280;
+}
+
+/* RIGHT SIDE CONTENT */
+.jh-card-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+    width: 100%;
+
+}
+
+.jh-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jh-openings {
+  padding: 6px 10px;
+  font-size: 0.82rem;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.jh-salary {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* SKILLS SECTION */
+.jh-skills {
+  margin: 12px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.jh-skill {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  
+}
+
+.skill-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.86rem;
+}
+
+.skill-name {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.skill-track {
+  height: 6px;
+  width: 100%;
+  background: #e5e7eb;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  background: #2563eb;
+  border-radius: 3px;
+}
+
+/* FOOTER BUTTONS */
+.jh-card-footer {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.86rem;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #2563eb, #06b6d4);
+  color: #fff;
+}
+
+.btn-ghost {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.btn-link {
+  background: transparent;
+  color: #2563eb;
+  /* text-decoration: underline; */
+}
+
+.btn-primary.disabled{
+  background: #8f8f8fba;
+  color: #fff;
+}

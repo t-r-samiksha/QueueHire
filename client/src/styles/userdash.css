@@ -1,0 +1,348 @@
+:root {
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --text: #1e293b;
+  --sub: #64748b;
+  --border: #e2e8f0;
+  --primary: #2563eb;
+  --primary-soft: #eff6ff;
+  --radius: 14px;
+  --shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+/* PAGE */
+.jh-page {
+  padding: 28px;
+  background: var(--bg);
+  min-height: 100vh;
+  color: var(--text);
+  font-family: Inter, system-ui;
+}
+
+/* HEADER */
+.jh-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.jh-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.jh-sub {
+  font-size: 14px;
+  color: var(--sub);
+  margin-top: 4px;
+}
+
+/* SEARCH + SORT */
+.search-row {
+  display: flex;
+  gap: 10px;
+}
+
+.search-row input,
+.search-row select {
+  height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 14px;
+  outline: none;
+  background: #fff;
+}
+
+/* LAYOUT */
+.gridandside {
+  display: flex;
+  gap: 28px;
+}
+
+.jh-leftpanel {
+  flex: 1;
+}
+
+/* FILTER → LEFT SIDE */
+.filters {
+  background: var(--card);
+  padding: 18px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 500;
+  gap: 6px;
+}
+
+.filters label input,
+.filters label select {
+  padding: 10px 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  font-size: 14px;
+}
+
+/* BUTTONS */
+.btn {
+  height: 34px;
+  padding: 0 16px;
+  font-size: 14px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  /* background: #000; */
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--border);
+}
+
+.btn-ghost.small,
+.btn-link.small {
+  height: 28px;
+  padding: 0 10px;
+  font-size: 13px;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+}
+
+.btn-link {
+  background: transparent;
+  border: none;
+  color: var(--primary);
+}
+
+/* GRID OF JOBS */
+.jh-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 24px;
+}
+
+.job-card-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.job-actions-row {
+  display: flex;
+  gap: 10px;
+}
+
+/* EMPTY */
+.empty {
+  text-align: center;
+  padding: 32px 0;
+  color: var(--sub);
+  font-size: 15px;
+}
+
+/* RIGHT SIDE */
+.jh-side {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.side-card {
+  background: var(--card);
+  /* background: #000; */
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.side-card h4 {
+  margin: 0 0 14px 0;
+  font-size: 17px;
+  font-weight: 600;
+  /* background: #000; */
+}
+
+.muted {
+  color: var(--sub);
+}
+
+.small {
+  font-size: 13px;
+}
+
+/* SAVED JOBS LIST */
+
+.saved-item {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  gap: 12px;
+  /* background: #000; */
+  list-style: none;
+  /* pad-left: 0; */
+}
+
+.saved-item:last-child {
+  border-bottom: none;
+}
+
+/* --- OLD USER DASH CARD AREA (PROFILE + TABLE) --- */
+
+.ud-wrap {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  font-family: Inter, system-ui;
+}
+
+.ud-main {
+  flex: 1;
+}
+
+.ud-side {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ud-card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.ud-profile {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ud-avatar {
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  background: var(--primary-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 18px;
+}
+
+.ud-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.ud-email {
+  font-size: 13px;
+  color: var(--sub);
+}
+
+.ud-section {
+  margin-top: 26px;
+}
+
+.ud-section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.ud-table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ud-thead,
+.ud-row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 0.8fr;
+  font-size: 14px;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: var(--radius);
+}
+
+.ud-thead {
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.ud-row {
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+.ud-badge {
+  padding: 4px 10px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ud-badge.ip {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.ud-badge.pd {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* UPCOMING */
+.ud-side-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ud-side-row {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.ud-side-row:last-child {
+  border-bottom: none;
+}
+
+.ud-side-role {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.ud-side-time {
+  font-size: 13px;
+  color: var(--sub);
+}
+
+.ud-side-stage {
+  font-size: 13px;
+  color: var(--primary);
+  margin-top: 4px;
+}
+.side-card ul{
+    padding-left: 0;
+}

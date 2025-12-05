@@ -1,0 +1,258 @@
+
+
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background:#f3f6fb;
+  color:#0f1724;
+  /* padding-bottom: 100px; */
+}
+
+.signup-wrapper{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: linear-gradient(to bottom, #fff, #376ff6);
+  /* padding-bottom:138px; */
+  /* width: 100%; */
+}
+
+.signup-card{
+  width:100%;
+  max-width:100%;
+  /* height:760px; */
+  display:flex;
+  /* position:relative; */
+  border-radius:18px;
+  /* overflow:visible; */
+  box-shadow:0 18px 50px rgba(2,6,23,0.12);
+  height: 120vh;
+}
+
+.signup-left{
+  width:55%;
+  background:#376ff6;
+  color:#fff;
+  padding:48px 40px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  border-top-right-radius:100px;
+  /* border-bottom-left-radius:var(--card-radius);
+  border-top-right-radius:var(--inner-radius);
+  border-bottom-right-radius:var(--inner-radius); */
+  position:relative;
+}
+
+.illustration{
+  width:100%;
+  max-width:580px;
+  /* margin-top:12px; */
+
+}
+
+.illustration img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+.left-footer{
+  margin-top:auto;
+  font-size:13px;
+  opacity:0.9;
+  padding-bottom:8px;
+}
+
+.signup-right{
+  width:45%;
+  background:#fff;
+  padding: 56px 56px;
+  /* padding-top: 34px; */
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  /* border-top-left-radius:var(--inner-radius); */
+  border-bottom-left-radius:120px;
+  /* border-top-right-radius:var(--card-radius); */
+  /* border-bottom-right-radius:var(--card-radius); */
+}
+
+.form-box{
+  width:100%;
+  max-width:420px;
+}
+
+.form-box h1{
+  margin:0;
+  font-size:26px;
+  font-weight:600;
+}
+
+.lead{
+  margin:6px 0 20px 0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.label{
+  display:block;
+  margin-top:12px;
+  font-size:13px;
+  color:#6b7280;
+}
+
+.label-text{
+  display:block;
+  margin-bottom:8px;
+  color:#6b7280;
+}
+
+.input{
+  width:100%;
+  padding:12px 14px;
+  border-radius:10px;
+  border:1px solid #e6e9ee;
+  font-size:14px;
+  outline:none;
+  transition:border-color .12s, box-shadow .12s;
+}
+
+.input:focus{
+  border-color:#376ff6;
+  box-shadow:0 8px 24px rgba(55,111,246,0.08);
+}
+
+.signup-form{
+  margin-top:10px;
+}
+
+.row{
+  display:flex;
+  gap:12px;
+}
+
+.half{
+  flex:1;
+}
+
+.file-label{
+  margin-top:12px;
+}
+
+.file-input{
+  margin-top:8px;
+}
+
+.file-name{
+  margin-top:6px;
+  font-size:13px;
+  color:#6b7280;
+}
+
+.primary{
+  margin-top:18px;
+  width:100%;
+  background:#376ff6;
+  color:#fff;
+  padding:12px 14px;
+  border:none;
+  border-radius:10px;
+  font-weight:600;
+  cursor:pointer;
+  font-size:15px;
+}
+
+.primary:hover{
+  background:#2f5ce0;
+}
+
+.primary:disabled{
+  opacity:0.7;
+  cursor:default;
+}
+
+.form-error{
+  background:#fff1f2;
+  color:#b91c1c;
+  padding:10px 12px;
+  border-radius:8px;
+  margin-bottom:10px;
+  font-size:13px;
+}
+
+.small{
+  margin-top:14px;
+  font-size:13px;
+  color:#6b7280;
+}
+
+.small a{
+  color:#376ff6;
+  text-decoration:none;
+}
+
+.admin-block{
+  margin-top:20px;
+  background:#f8fafc;
+  padding:18px;
+  border-radius:12px;
+  font-size:14px;
+  color:#334155;
+}
+
+.admin-block p{
+  margin:0 0 14px 0;
+}
+
+.otp-status {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+.otp-status.success {
+  background-color: #ecfdf3;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.otp-status.error {
+  background-color: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+/* SECONDARY BUTTON (for Verify OTP etc.) */
+.secondary {
+  background: transparent;
+  border: 2px solid #3b82f6;
+  color: #3b82f6;
+  font-weight: 500;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.secondary:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+.secondary:active {
+  transform: scale(0.97);
+}
+
+.secondary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background: transparent;
+  color: #82aaff;
+  border-color: #82aaff;
+}
